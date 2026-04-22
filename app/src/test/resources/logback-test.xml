@@ -1,0 +1,30 @@
+<configuration>
+
+    <!-- Настройка вывода в консоль -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Формат вывода: Время | Поток | Уровень | Логгер | Сообщение -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 
+      Уровень логирования для всего приложения.
+      INFO означает, что будут видны сообщения INFO, WARN и ERROR.
+      Сообщения DEBUG и TRACE будут скрыты.
+    -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <!-- 
+      Настройка для конкретных пакетов (опционально).
+      Если вы хотите видеть DEBUG логи только от Selenide, раскомментируйте:
+    -->
+    <!-- 
+    <logger name="com.codeborne.selenide" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    -->
+
+</configuration>

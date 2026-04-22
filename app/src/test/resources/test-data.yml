@@ -1,0 +1,11 @@
+users:
+  admin:
+    username: "admin"
+  redactor:
+    username: "Redactor"
+  content-manager:
+    username: "ContentManager"
+  license-manager:
+    username: "LicenceManager"
+  analyst:
+    username: "Analyst"
