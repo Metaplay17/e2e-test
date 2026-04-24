@@ -54,6 +54,9 @@ dependencies {
 
     // Source: https://mvnrepository.com/artifact/org.yaml/snakeyaml
     testImplementation 'org.yaml:snakeyaml:2.6'
+
+    // Source: https://mvnrepository.com/artifact/net.datafaker/datafaker
+    testImplementation 'net.datafaker:datafaker:2.5.4'
 }
 
 java {

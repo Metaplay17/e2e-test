@@ -62,7 +62,6 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     @Description("Заполнение формы и отправка запроса на формирование плейлиста")
     public void testFormPlaylist() {
-        setupAuth("REDACTOR");
         localStorage().setItem("token", authToken);
         LocalDate date = LocalDate.now();
 

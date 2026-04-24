@@ -5,6 +5,9 @@
 build
 
 app/build
+app/allure-results
 
 # Ignore Kotlin plugin data
 .kotlin
+
+.env
